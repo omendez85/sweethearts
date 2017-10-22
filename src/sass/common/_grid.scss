@@ -35,8 +35,20 @@ div[class^="column"] {
 .column-20{
     @include flex(0, 0, 20%);
 }
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
 
 @media #{$xs-breakpoint} {
+    .row{
+        flex-direction: column;
+    }
     .column, .column-100, .column-50, .column-33, .column-25, .column-20{
         @include flex(0, 0, 100%);
     }

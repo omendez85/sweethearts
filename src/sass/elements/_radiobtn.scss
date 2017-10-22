@@ -1,0 +1,19 @@
+//Base Styles
+input[type=radio] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    display: inline-block;
+}
+.radio-container{
+    position: relative;
+    label{
+        display: block;
+        cursor: pointer;
+        &:before{
+            font-size: 20px;
+            line-height: 2.3em;
+            cursor: pointer;
+        }
+    }
+}

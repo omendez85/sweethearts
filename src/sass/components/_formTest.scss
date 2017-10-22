@@ -2,4 +2,92 @@
     input[type=range]{
         margin: 20px 0;
     }
+
+    .radio-container{
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .favorite-color{
+        input[type=radio]:checked{
+            & + label:before {
+                background: $thistle;
+            }
+        }
+        label{
+            &:before{
+                content: '\2665';
+                border: solid 1px $thistle;
+                margin-right: 5px;
+                @include transition(all, 0.5s, ease-out);
+            }
+        }
+        .favColor-1 + label{
+            &:before { color: blue; }
+        }
+        .favColor-2 + label{
+            &:before { color: pink; }
+        }
+        .favColor-3 + label{
+            &:before { color: yellow; }
+        }
+        .favColor-4 + label{
+            &:before {
+                color: white;
+            }
+        }
+        .favColor-5 + label{
+            &:before { color: green; }
+        }
+    }
+
+    .eyes-color{
+        [type=radio]{
+            & + label {
+                border: solid 1px transparent;
+                background: url("/assets/img/close-eyes.png") no-repeat left;
+                &:before, &:after{
+                    opacity: 0;
+                }
+            }
+        }
+        [type=radio]:checked{
+            & + label {
+                border: solid 1px $thistle;
+                background: url("/assets/img/eyes.png") no-repeat left;
+                &:before, &:after{
+                    opacity: 1;
+                }
+            }
+        }
+        label{
+            padding: 0 5px 0 60px;
+            line-height: 3em;
+            border: solid 1px transparent;
+            @include transition(all, 0.5s, ease-out);
+            &:before, &:after{
+                content: '\2022';
+                margin-right: 5px;
+                @include transition(all, 0.5s, ease-out);
+                position: absolute;
+                font-size: 25px;
+                line-height: 0;
+                top: 26px;
+                left: 8px;
+            }
+            &:after{
+                left: 35px;
+            }
+        }
+        .favEyesColor-1 + label{
+            &:before, &:after { color: blue; }
+        }
+        .favEyesColor-2 + label{
+            &:before, &:after { color: #7b1d1d; }
+        }
+        .favEyesColor-3 + label{
+            &:before, &:after { color: green; }
+        }
+    }
+
 }

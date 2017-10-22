@@ -1,3 +1,17 @@
+//Label Value
+.label-value{
+    position: absolute;
+    left: 15px;
+    top:0;
+    @include vertical-align();
+    font-size: 16px;
+    font-weight: bold;
+}
+input[type=range] {
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
 //Code example from https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
 
 //Base Styles
@@ -33,7 +47,7 @@ input[type=range]::-webkit-slider-thumb {
     @include border-radius(100%);
     height: 35px;
     width: 35px;
-    background: $thistle;
+    background: $blueSky;
     cursor: pointer;
     margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
     @include box-shadow(0, 0, 3px, 1px, $lightSteelBlue);
@@ -47,7 +61,7 @@ input[type=range]::-moz-range-thumb {
     height: 35px;
     width: 35px;
     @include border-radius(100%);
-    background: $thistle;
+    background: $blueSky;
     cursor: pointer;
 }
 
@@ -58,7 +72,7 @@ input[type=range]::-ms-thumb {
     height: 35px;
     width: 35px;
     @include border-radius(100%);
-    background: $thistle;
+    background: $blueSky;
     cursor: pointer;
 }
 
@@ -70,7 +84,7 @@ input[type=range]::-webkit-slider-runnable-track {
     cursor: pointer;
     @include box-shadow(0, 0, 3px, 1px, $lightSteelBlue);
     background: $mediumVioletRed;
-    @include border-radius(2px);
+    @include border-radius(10px);
     border: 1px solid $thistle;
 }
 

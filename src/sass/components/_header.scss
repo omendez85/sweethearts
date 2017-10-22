@@ -14,4 +14,20 @@ header {
     .main-title{
         @include vertical-align-center();
     }
+
+    @media #{$sm-breakpoint} {
+        .lang-container{
+            a{
+                width: 25px;
+            }
+        }
+    }
+
+    @media #{$xs-breakpoint} {
+        .lang-container{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
 }

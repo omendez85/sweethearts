@@ -22,6 +22,10 @@
 	@include align-items(center);
 }
 
+@mixin vertical-align() {
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 // Usage:   @include transition(width, height 0.3s ease-in-out);
 // Output:  -webkit-transition(width 0.2s, height 0.3s ease-in-out);

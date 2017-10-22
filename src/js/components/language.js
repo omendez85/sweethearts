@@ -13,7 +13,6 @@ export default (function () {
 
     function init(){
         let langSelector = langContainer.querySelectorAll('a');
-        console.log(langSelector);
 
         //spread operator to support IE because nodechild doesn't have forEach method
         [...langSelector].forEach( lang => {
