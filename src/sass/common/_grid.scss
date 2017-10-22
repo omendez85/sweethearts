@@ -1,0 +1,58 @@
+@mixin commonStyles() {
+    padding: 0 10px;
+}
+
+.container, .row{
+    box-sizing: border-box;
+}
+.container{
+    max-width: $max-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.row{
+    @include flexbox();
+}
+.column{
+    @include flex();
+    @include commonStyles();
+}
+.column-100{
+    @include flex(0, 0, 100%);
+    @include commonStyles();
+}
+.column-50{
+    @include flex(0, 0, 50%);
+    @include commonStyles();
+}
+.column-33{
+    @include flex(0, 0, 33.3333%);
+    @include commonStyles();
+}
+.column-25{
+    @include flex(0, 0, 25%);
+    @include commonStyles();
+}
+
+@media #{$xs-breakpoint} {
+    .column{
+        @include flex(0, 0, 100%);
+        @include commonStyles();
+    }
+    .column-100{
+        @include flex(0, 0, 100%);
+        @include commonStyles();
+    }
+    .column-50{
+        @include flex(0, 0, 100%);
+        @include commonStyles();
+    }
+    .column-33{
+        @include flex(0, 0, 100%);
+        @include commonStyles();
+    }
+    .column-25{
+        @include flex(0, 0, 100%);
+        @include commonStyles();
+    }
+}
