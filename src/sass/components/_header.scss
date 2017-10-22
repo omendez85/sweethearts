@@ -1,8 +1,5 @@
 header {
-    background-image: url("/assets/img/header-bg.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    background: rgba($thistle, 0.5);
     border-bottom: solid 1px $thistle;
     .lang-container{
         text-align: right;
