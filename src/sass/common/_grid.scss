@@ -14,46 +14,30 @@
 .row{
     @include flexbox();
 }
+div[class^="column"] {
+    @include commonStyles();
+}
 .column{
     @include flex();
-    @include commonStyles();
 }
 .column-100{
     @include flex(0, 0, 100%);
-    @include commonStyles();
 }
 .column-50{
     @include flex(0, 0, 50%);
-    @include commonStyles();
 }
 .column-33{
     @include flex(0, 0, 33.3333%);
-    @include commonStyles();
 }
 .column-25{
     @include flex(0, 0, 25%);
-    @include commonStyles();
+}
+.column-20{
+    @include flex(0, 0, 20%);
 }
 
 @media #{$xs-breakpoint} {
-    .column{
+    .column, .column-100, .column-50, .column-33, .column-25, .column-20{
         @include flex(0, 0, 100%);
-        @include commonStyles();
-    }
-    .column-100{
-        @include flex(0, 0, 100%);
-        @include commonStyles();
-    }
-    .column-50{
-        @include flex(0, 0, 100%);
-        @include commonStyles();
-    }
-    .column-33{
-        @include flex(0, 0, 100%);
-        @include commonStyles();
-    }
-    .column-25{
-        @include flex(0, 0, 100%);
-        @include commonStyles();
     }
 }

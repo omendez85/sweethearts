@@ -7,5 +7,13 @@
 @import "./common/_grid";
 @import "./common/_font";
 
+/* Elements */
+@import "./elements/_buttons";
 
+/*FORMS*/
+@import "./common/_form";
+@import "./elements/_inputRange";
+
+/*Components*/
 @import "./components/_header";
+@import "./components/_formTest";

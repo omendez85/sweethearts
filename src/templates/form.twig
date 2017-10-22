@@ -1,23 +1,17 @@
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="column-25">
-                <img src="/assets/img/logo.png" alt="Disney Princess">
+<div class="form-container form-test">
+    <form class="" action="#" method="post">
+        <div class="row field-container">
+            <div class="column-20">
+                <h3 data-lang="labelAge">Age</h3>
             </div>
-            <div class="column-50 main-title">
-                <h1 data-lang="mainTitle">Which Disney Princess Are You?</h1>
-            </div>
-            <div class="column-25 lang-container">
-                <a href="es">
-                    <img src="/assets/img/es.png" alt="Español">
-                </a>
-                <a href="en">
-                    <img src="/assets/img/en.png" alt="English">
-                </a>
-                <a href="de">
-                    <img src="/assets/img/de.png" alt="Deutsch">
-                </a>
+            <div class="column">
+                <input type="range" class="range" name="age" min="14" max="70" value="30">
             </div>
         </div>
-    </div>
-</header>
+        <div class="row field-container">
+            <div class="column">
+                <button type="submit" class="btn" name="button" data-lang="calcBtn">CALCULATE</button>
+            </div>
+        </div>
+    </form>
+</div>
