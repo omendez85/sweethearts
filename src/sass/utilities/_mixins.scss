@@ -16,6 +16,12 @@
 	-moz-border-radius: $radius;
 }
 
+@mixin vertical-align-center() {
+	@include flexbox();
+	@include justify-content(center);
+	@include align-items(center);
+}
+
 
 // Usage:   @include transition(width, height 0.3s ease-in-out);
 // Output:  -webkit-transition(width 0.2s, height 0.3s ease-in-out);
