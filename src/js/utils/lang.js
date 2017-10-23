@@ -133,6 +133,22 @@ const lang = {
         de: "Lilien"
     },
 
+    loading: {
+        es: "Calculando... ",
+        en: "Calculating...",
+        de: "Berechnung..."
+    },
+    resultPrincess: {
+        es: "Genial, luces como: ",
+        en: "Awesome, you looks like:",
+        de: "Ehrfürchtig, du siehst aus wie:"
+    },
+    resultPrincess2: {
+        es: "No olvides que eres y siempre seras una princesa.",
+        en: "Do not forget that you are and you will always be a princess.",
+        de: "Vergiss nicht, dass du es bist und du wirst immer eine Prinzessin sein."
+    }
+
 };
 
 export default lang;

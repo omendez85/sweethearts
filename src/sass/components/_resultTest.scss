@@ -1,0 +1,9 @@
+.result-test{
+    display: none;
+    &.active{
+        display: block;
+    }
+    .name-princess{
+        text-decoration: underline;
+    }
+}
