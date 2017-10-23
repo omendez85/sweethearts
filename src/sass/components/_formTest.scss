@@ -40,6 +40,11 @@
         .favColor-5 + label{
             &:before { color: green; }
         }
+        @media #{$sm-breakpoint} {
+            .radio-container{
+                width: 100%;
+            }
+        }
     }
 
     .eyes-color{
@@ -63,7 +68,7 @@
             }
         }
         label{
-            padding: 0 5px 0 60px;
+            padding: 0 5px 0 80px;
             line-height: 3em;
             border: solid 1px transparent;
             @include transition(all, 0.5s, ease-out);
@@ -74,25 +79,37 @@
                 position: absolute;
                 font-size: 25px;
                 line-height: 0;
-                top: 28px;
-                left: 10px;
+                top: 24px;
+                left: 18px;
             }
             &:after{
-                left: 37px;
+                left: 50px;
             }
         }
         .favEyesColor-1 + label{
-            &:before, &:after { color: blue; }
+            &:before, &:after {
+                color: blue;
+            }
         }
         .favEyesColor-2 + label{
-            &:before, &:after { color: #7b1d1d; }
+            &:before, &:after {
+                color: #7b1d1d;
+            }
         }
         .favEyesColor-3 + label{
-            &:before, &:after { color: green; }
+            &:before, &:after {
+                color: green;
+            }
+        }
+
+        @media #{$sm-breakpoint} {
+            .radio-container{
+                width: 100%;
+            }
         }
     }
 
-    .hair-selector{
+    .big-selector{
         .radio-container{
             width: 32%;
             margin: 0;

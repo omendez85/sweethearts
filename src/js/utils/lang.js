@@ -110,8 +110,28 @@ const lang = {
         es: "Moreno y delgado",
         en: "Dark-skinned and thin",
         de: "Dunkelhäutig und dünn"
-    }
+    },
 
+    labelFlower: {
+        es: "Escoge tu flor favorita",
+        en: "Choose your favorite flower",
+        de: "Wähle deine Lieblingsblume"
+    },
+    flower1: {
+        es: "Rosas",
+        en: "Roses",
+        de: "Roses"
+    },
+    flower2: {
+        es: "Girasol",
+        en: "Sunflower",
+        de: "Sonnenblume"
+    },
+    flower3: {
+        es: "Lirios",
+        en: "Lilies",
+        de: "Lilien"
+    },
 
 };
 
