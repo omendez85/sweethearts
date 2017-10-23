@@ -5,7 +5,7 @@ module.exports = {
         menu: './src/api/lang.json'
     },
     paths: {
-        app: './dist/',
+        app: './public/',
         src: {
             main: './src/',
             assets: './src/assets/',
@@ -13,14 +13,14 @@ module.exports = {
             js: './src/js/'
         },
         dist: {
-            css: './dist/css',
-            js: './dist/js',
-            assets: './dist/assets'
+            css: './public/css',
+            js: './public/js',
+            assets: './public/assets'
         }
     },
     server: {
         port: 8080,
         host: 'localhost',
-        path: 'dist'
+        path: 'public'
     }
 };

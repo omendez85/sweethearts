@@ -15,4 +15,4 @@ gulp build:prod
 
 ##Third Party stuff
 
-Normalize SCSS
+- Normalize SCSS
