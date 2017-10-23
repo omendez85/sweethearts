@@ -1,4 +1,4 @@
-import lang from 'app.lang';
+import langFile from 'app.lang';
 
 export default (function () {
 
@@ -27,7 +27,8 @@ export default (function () {
     function translatePage(langSelected) {
         [...langElements].forEach( el => {
             let idEl = el.getAttribute('data-lang');
-            el.textContent = lang[idEl][langSelected];
+            if( langFile === undefined || langFile[idEl] === undefined ||  langFile[idEl][langSelected] === undefined) return;
+            el.textContent = langFile[idEl][langSelected];
         });
     }
 
