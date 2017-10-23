@@ -13,6 +13,10 @@ gulp
 gulp build:prod
 
 
-##Third Party stuff
+##Third Party stuff ##
 
-- Normalize SCSS
+[Normalize SCSS](http://git.io/normalize)
+
+## Public URL ##
+
+[Link to public page](https://omendez85.github.io/sweethearts/)
