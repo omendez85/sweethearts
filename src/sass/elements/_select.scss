@@ -1,0 +1,14 @@
+//Base Styles
+select {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid $thistle;
+    @include border-radius(5px);
+    @include vertical-align();
+    display: block;
+    position: relative;
+    @media #{$xs-breakpoint} {
+        transform: none;
+    }
+}

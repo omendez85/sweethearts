@@ -85,6 +85,26 @@ const lang = {
         es: "Recogido",
         en: "Tied",
         de: "Gebunden"
+    },
+    labelMan: {
+        es: "Escoge tu tipo de principe",
+        en: "Choose your type of prince",
+        de: "Wähle deine Art von Prinz"
+    },
+    man1: {
+        es: "Musculoso y moreno",
+        en: "Muscular and dark-skinned",
+        de: "Muskulös und dunkelhäutig"
+    },
+    man2: {
+        es: "Delgado y alto",
+        en: "Thin and tall",
+        de: "Dünn und groß"
+    },
+    man3: {
+        es: "Moreno y delgado",
+        en: "Dark-skinned and thin",
+        de: "Dunkelhäutig und dünn"
     }
 
 

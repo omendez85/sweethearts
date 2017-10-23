@@ -74,11 +74,11 @@
                 position: absolute;
                 font-size: 25px;
                 line-height: 0;
-                top: 26px;
-                left: 8px;
+                top: 28px;
+                left: 10px;
             }
             &:after{
-                left: 35px;
+                left: 37px;
             }
         }
         .favEyesColor-1 + label{
@@ -129,7 +129,19 @@
                 margin: 0 auto;
             }
         }
+    }
 
+    .man-selector{
+        .man-img {
+            display: none;
+            @include transition(all, 0.5s, ease-out);
+            &.man1{
+                display: block;
+            }
+        }
+        img{
+            margin: 0 auto;
+        }
     }
 
 }
