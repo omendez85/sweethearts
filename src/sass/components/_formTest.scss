@@ -55,7 +55,7 @@
         [type=radio]{
             & + label {
                 border: solid 3px transparent;
-                background: url("/assets/img/close-eyes.png") no-repeat left;
+                background: url("../assets/img/close-eyes.png") no-repeat left;
                 @include border-radius(5px);
                 &:before, &:after{
                     opacity: 0;
@@ -65,7 +65,7 @@
         [type=radio]:checked{
             & + label {
                 border-color: $thistle;
-                background: url("/assets/img/eyes.png") no-repeat left;
+                background: url("../assets/img/eyes.png") no-repeat left;
                 &:before, &:after{
                     opacity: 1;
                 }

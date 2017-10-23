@@ -13,7 +13,7 @@ gulp
 gulp build:prod
 
 
-##Third Party stuff ##
+## Third Party stuff ##
 
 [Normalize SCSS](http://git.io/normalize)
 
