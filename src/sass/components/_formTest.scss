@@ -17,7 +17,8 @@
         label{
             &:before{
                 content: '\2665';
-                border: solid 1px $thistle;
+                border: solid 3px $thistle;
+                @include border-radius(5px);
                 margin-right: 5px;
                 @include transition(all, 0.5s, ease-out);
             }
@@ -44,8 +45,9 @@
     .eyes-color{
         [type=radio]{
             & + label {
-                border: solid 1px transparent;
+                border: solid 3px transparent;
                 background: url("/assets/img/close-eyes.png") no-repeat left;
+                @include border-radius(5px);
                 &:before, &:after{
                     opacity: 0;
                 }
@@ -53,7 +55,7 @@
         }
         [type=radio]:checked{
             & + label {
-                border: solid 1px $thistle;
+                border-color: $thistle;
                 background: url("/assets/img/eyes.png") no-repeat left;
                 &:before, &:after{
                     opacity: 1;
@@ -88,6 +90,46 @@
         .favEyesColor-3 + label{
             &:before, &:after { color: green; }
         }
+    }
+
+    .hair-selector{
+        .radio-container{
+            width: 32%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        [type=radio]{
+            & + label {
+                border: solid 3px transparent;
+                @include border-radius(20px);
+            }
+        }
+        [type=radio]:checked{
+            & + label {
+                border-color: $thistle;
+            }
+        }
+        label{
+            overflow: hidden;
+            width: 100%;
+            display: block;
+            padding: 0;
+            line-height: 3em;
+            border: solid 1px transparent;
+            @include transition(all, 0.5s, ease-out);
+            &:before{
+                content: none;
+            }
+            img{
+                padding: 5px 10px 0;
+                box-sizing: border-box;
+            }
+            span, img{
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
     }
 
 }

@@ -23,6 +23,9 @@ div[class^="column"] {
 .column-100{
     @include flex(0, 0, 100%);
 }
+.column-80{
+    @include flex(0, 0, 80%);
+}
 .column-50{
     @include flex(0, 0, 50%);
 }
@@ -49,7 +52,7 @@ div[class^="column"] {
     .row{
         flex-direction: column;
     }
-    .column, .column-100, .column-50, .column-33, .column-25, .column-20{
+    .column, .column-100, .column-80, .column-50, .column-33, .column-25, .column-20{
         @include flex(0, 0, 100%);
     }
 }

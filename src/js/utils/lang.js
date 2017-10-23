@@ -50,20 +50,41 @@ const lang = {
         en: "Color of your eyes",
         de: "Farbe der Augen"
     },
-    favColor1: {
+    favEyesColor1: {
         es: "Azul",
         en: "Blue",
         de: "Blau"
     },
-    favColor2: {
+    favEyesColor2: {
         es: "Cafe",
         en: "Brown",
         de: "Braun"
     },
-    favColor3: {
+    favEyesColor3: {
         es: "Verde",
         en: "Green",
         de: "Grün"
+    },
+
+    labelHair: {
+        es: "Cabello",
+        en: "Hair",
+        de: "Haare"
+    },
+    hair1: {
+        es: "Largo",
+        en: "Long",
+        de: "Blau"
+    },
+    hair2: {
+        es: "Corto",
+        en: "short",
+        de: "Braun"
+    },
+    hair3: {
+        es: "Recogido",
+        en: "Tied",
+        de: "Gebunden"
     }
 
 
