@@ -5,6 +5,52 @@
     &.last{
         border-bottom: 0;
     }
+    &.has-error{
+        position: relative;
+        &:before{
+            content: '\2639';
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            font-size: 20px;
+            display: block;
+            color: $red;
+            animation: animateFace 1s infinite;
+        }
+    }
+}
+
+.sad-face{
+    position: relative;
+    &:before{
+        content: '\2639';
+        font-size: 20px;
+        display: inline-block;
+        color: $red;
+        position: relative;
+        top: 3px;
+        animation: animateFace 2s infinite;
+    }
+}
+
+@keyframes animateFace {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.error-form-msg{
+    display: none;
+    &.active{
+        display: block;
+    }
 }
 .input-container{
     position: relative;

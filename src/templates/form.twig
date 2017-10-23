@@ -15,7 +15,7 @@
             </div>
             <div class="column-80 input-container">
                 <div class="radio-container">
-                    <input type="radio" class="favColor-1" id="favColor-1" class="radio" name="favColor" value="1" >
+                    <input type="radio" class="favColor-1" id="favColor-1" class="radio" name="favColor" value="1" data-required>
                     <label for="favColor-1" data-lang="favColor1">Blue</label>
                 </div>
                 <div class="radio-container">
@@ -44,7 +44,7 @@
             </div>
             <div class="column-80 input-container">
                 <div class="radio-container">
-                    <input type="radio" class="favEyesColor-1" id="favEyesColor-1" class="radio" name="favEyescolor" value="1" >
+                    <input type="radio" class="favEyesColor-1" id="favEyesColor-1" class="radio" name="favEyescolor" value="1" data-required>
                     <label for="favEyesColor-1" data-lang="favEyesColor1">Blue</label>
                 </div>
                 <div class="radio-container">
@@ -64,7 +64,7 @@
             </div>
             <div class="column-80 input-container">
                 <div class="radio-container text-center">
-                    <input type="radio" class="hair-1" id="hair-1" class="radio" name="hair" value="1" >
+                    <input type="radio" class="hair-1" id="hair-1" class="radio" name="hair" value="1" data-required>
                     <label for="hair-1">
                         <img src="/assets/img/long.png" alt="">
                         <span data-lang="hair1">Long</span>
@@ -115,5 +115,13 @@
                 <button type="submit" class="btn" name="button" data-lang="calcBtn">CALCULATE</button>
             </div>
         </div>
+
+        <div class="row field-container last error-form-msg">
+            <div class="column text-center">
+                <span data-lang="errorForm">Oooooops, please select at least one option in the fields marked with the</span>
+                <span class="sad-face"></span>
+            </div>
+        </div>
+
     </form>
 </div>

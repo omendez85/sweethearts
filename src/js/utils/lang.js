@@ -4,6 +4,11 @@ const lang = {
         en: "Which Disney Princess Are You?",
         de: "Welche Disney Princess bist du?"
     },
+    errorForm: {
+        es: "Oooooops, por favor seleccione al menos una de las opciones en cada campo marcado con el  *",
+        en: "Oooooops, please select at least one option in the fields marked with the *",
+        de: "Oooooops, Bitte wählen Sie mindestens eine Option in den mit * markierten Feldern aus."
+    },
     calcBtn: {
         es: "CALCULAR",
         en: "CALCULATE",
