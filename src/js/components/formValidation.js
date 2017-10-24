@@ -135,43 +135,51 @@ export default (function () {
                 return value;
             });
 
-            return this.getPrincess( valuesUser, [...results] );
+            return this.getPrincess( valuesUser, results );
         }
 
-        getPrincess( userResponse, responsesTest ) {
+        getPrincess ( userResponse, responsesTest ) {
 
             let valuesUser = userResponse.toString();
-
-            let princessMatch = {
+            let arrayMatch = {
                 princessName: '',
                 urlImg: ''
             };
+            let newResponseArray = [];
 
             responsesTest.forEach( princess => {
 
-                if(princessMatch.princessName !== '') return;
+                if(arrayMatch.princessName !== '') return;
+                let newArrayResponses = [];
 
-                princess.responses.forEach( listResponses => {
+                princess.responses.forEach( arrayResponse => {
 
-                    if(princessMatch.princessName !== '') return;
+                    if(arrayMatch.princessName !== '') return;
 
-                    let responseString = listResponses.toString();
+                    let arrayString = arrayResponse.toString();
 
-                    if (valuesUser === responseString) {
-                        princessMatch.princessName = princess.princessName;
-                        princessMatch.urlImg = princess.urlImg;
+                    if (valuesUser === arrayString) {
+                        arrayMatch.princessName = princess.princessName;
+                        arrayMatch.urlImg = princess.urlImg;
                     } else {
-                        listResponses.splice(-1,1);
+                        let tmpArray = [...arrayResponse];
+                        tmpArray.pop();
+                        newArrayResponses.push(tmpArray)
                     }
-
+                });
+                newResponseArray.push({
+                    princessName: princess.princessName,
+                    urlImg: princess.urlImg,
+                    responses: newArrayResponses
                 });
             });
 
-            if (princessMatch.princessName !== '') {
-                return princessMatch;
+            if (arrayMatch.princessName !== '') {
+                return arrayMatch;
             } else {
-                let newResults = userResponse.splice(-1,1);
-                return this.getPrincess( userResponse, responsesTest );
+                let newResults = [...userResponse];
+                newResults.pop();
+                return this.getPrincess( newResults, newResponseArray );
             }
         }
 
