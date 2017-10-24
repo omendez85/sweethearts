@@ -942,16 +942,29 @@ header .main-title {
   transition: all 0.2s, 0.5s 0.2s, ease-out 0.2s;
 }
 
+@media only screen and (max-width: 767px) {
+  .form-test .favorite-color label {
+    margin-bottom: 20px;
+  }
+  .form-test .favorite-color label:before {
+    content: '\2022';
+    font-size: 60px;
+    line-height: 23px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 .form-test .favorite-color .favColor-1 + label:before {
-  color: blue;
+  color: #1a5ecc;
 }
 
 .form-test .favorite-color .favColor-2 + label:before {
-  color: pink;
+  color: #F47983;
 }
 
 .form-test .favorite-color .favColor-3 + label:before {
-  color: yellow;
+  color: #F7CA18;
 }
 
 .form-test .favorite-color .favColor-4 + label:before {
@@ -959,7 +972,7 @@ header .main-title {
 }
 
 .form-test .favorite-color .favColor-5 + label:before {
-  color: green;
+  color: #26A65B;
 }
 
 @media only screen and (max-width: 767px) {
@@ -980,6 +993,12 @@ header .main-title {
   opacity: 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .form-test .eyes-color [type=radio] + label {
+    background-size: 85px auto;
+  }
+}
+
 .form-test .eyes-color [type=radio]:checked + label {
   border-color: #C29FC2;
   background: url("../assets/img/eyes.png") no-repeat left;
@@ -987,6 +1006,12 @@ header .main-title {
 
 .form-test .eyes-color [type=radio]:checked + label:before, .form-test .eyes-color [type=radio]:checked + label:after {
   opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-test .eyes-color [type=radio]:checked + label {
+    background-size: 85px auto;
+  }
 }
 
 .form-test .eyes-color label {
@@ -1009,8 +1034,29 @@ header .main-title {
   left: 18px;
 }
 
+@media only screen and (max-width: 767px) {
+  .form-test .eyes-color label:before, .form-test .eyes-color label:after {
+    font-size: 32px;
+    line-height: 0;
+    top: 23px;
+    left: 20px;
+  }
+}
+
 .form-test .eyes-color label:after {
   left: 50px;
+}
+
+@media only screen and (max-width: 767px) {
+  .form-test .eyes-color label:after {
+    left: 59px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .form-test .eyes-color label {
+    padding: 0 5px 0 100px;
+  }
 }
 
 .form-test .eyes-color .favEyesColor-1 + label:before, .form-test .eyes-color .favEyesColor-1 + label:after {

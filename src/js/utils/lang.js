@@ -15,14 +15,14 @@ const lang = {
         de: "BERECHNEN"
     },
     labelAge: {
-        es: "Edad",
-        en: "Age",
-        de: "Alter"
+        es: "Selecciona tu edad",
+        en: "Choose your age",
+        de: "Wähle dein Alter"
     },
     labelFavColor: {
-        es: "Color preferido",
-        en: "Favorite color",
-        de: "Lieblingsfarbe"
+        es: "Selecciona tu color preferido",
+        en: "Choose your favorite color",
+        de: "Wähle deine Lieblingsfarbe"
     },
     favColor1: {
         es: "Azul",
@@ -51,9 +51,9 @@ const lang = {
     },
 
     labelEyesColor: {
-        es: "Color de tus ojos",
-        en: "Color of your eyes",
-        de: "Farbe der Augen"
+        es: "Escoge el color de tus ojos",
+        en: "Choose your eye color",
+        de: "Wähle deine Augenfarbe"
     },
     favEyesColor1: {
         es: "Azul",
@@ -72,9 +72,9 @@ const lang = {
     },
 
     labelHair: {
-        es: "Cabello",
-        en: "Hair",
-        de: "Haare"
+        es: "Escoge tu estilo de cabello",
+        en: "Choose your style of hair",
+        de: "Wähle deinen Haarstil"
     },
     hair1: {
         es: "Largo",

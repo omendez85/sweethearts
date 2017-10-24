@@ -26,15 +26,27 @@
                 margin-right: 5px;
                 @include transition(all, 0.5s, ease-out);
             }
+
+            @media #{$sm-breakpoint} {
+                margin-bottom: 20px;
+                &:before{
+                    content: '\2022';
+                    font-size: 60px;
+                    line-height: 23px;
+                    display: inline-block;
+                    vertical-align: middle;
+
+                }
+            }
         }
         .favColor-1 + label{
-            &:before { color: blue; }
+            &:before { color: #1a5ecc; }
         }
         .favColor-2 + label{
-            &:before { color: pink; }
+            &:before { color: #F47983; }
         }
         .favColor-3 + label{
-            &:before { color: yellow; }
+            &:before { color: #F7CA18; }
         }
         .favColor-4 + label{
             &:before {
@@ -42,7 +54,7 @@
             }
         }
         .favColor-5 + label{
-            &:before { color: green; }
+            &:before { color: #26A65B; }
         }
         @media #{$sm-breakpoint} {
             .radio-container{
@@ -60,6 +72,10 @@
                 &:before, &:after{
                     opacity: 0;
                 }
+
+                @media #{$sm-breakpoint} {
+                    background-size: 85px auto;
+                }
             }
         }
         [type=radio]:checked{
@@ -68,6 +84,9 @@
                 background: url("../assets/img/eyes.png") no-repeat left;
                 &:before, &:after{
                     opacity: 1;
+                }
+                @media #{$sm-breakpoint} {
+                    background-size: 85px auto;
                 }
             }
         }
@@ -85,9 +104,22 @@
                 line-height: 0;
                 top: 24px;
                 left: 18px;
+                @media #{$sm-breakpoint} {
+                    font-size: 32px;
+                    line-height: 0;
+                    top: 23px;
+                    left: 20px;
+                }
             }
             &:after{
                 left: 50px;
+                @media #{$sm-breakpoint} {
+                    left: 59px;
+                }
+            }
+
+            @media #{$sm-breakpoint} {
+                padding: 0 5px 0 100px;
             }
         }
         .favEyesColor-1 + label{
